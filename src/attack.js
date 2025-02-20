@@ -35,7 +35,7 @@ export const defineAttackActivity = (baseClass) => {
           saveDamageButton.label = game.i18n.localize("DND5E.SAVE.FIELDS.damage.label");
           saveDamageButton.dataset.action = "rollSaveDamage";
         }
-        buttons.push(...saveButtons);
+        buttons.push(...saveButtons.filter(i => !["consumeResource", "refundResource"].includes(i.dataset?.action)));
       }
       return buttons;
     }
