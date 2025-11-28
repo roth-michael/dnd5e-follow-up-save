@@ -11,8 +11,8 @@ export const defineAttackSheet = (baseClass) => {
       }
     }
   
-    async _prepareEffectContext(context) {
-      context = await super._prepareEffectContext(context);
+    async _prepareEffectContext(context, options) {
+      context = await super._prepareEffectContext(context, options);
       context.followupActivityOptions = this.item.system.activities.getByType("save").map(saveActivity => ({ label: saveActivity.name, value: saveActivity.id }));
       context.followupActivityOptions.unshift({ label: "DND5E.None", value: "" });
       return context;
