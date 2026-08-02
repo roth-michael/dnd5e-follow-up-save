@@ -9,6 +9,8 @@ If selected, the Attack activity's chat card will change to contain the relevant
 
 ![Chat Card](docs/chatCard.png)
 
+Also contains a setting which, if enabled, will disallow direct usage of any follow-up saves, meaning they will not appear in the activity choice dialog.
+
 ## Incompatibilities:
 - Anything that replaces the attack activity, probably.
 
