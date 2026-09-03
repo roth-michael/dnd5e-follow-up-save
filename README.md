@@ -1,3 +1,6 @@
+# Note:
+This module has moved to https://git.gay/roth-michael/dnd5e-follow-up-save - any issues or pull requests should be opened there.
+
 # DND5E Follow-up Save
 Allows for selecting a "follow-up" Save activity on any Attack activity. If selected, the save's chat buttons will be added to the chat card when using the attack.
 
